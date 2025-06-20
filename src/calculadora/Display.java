@@ -6,12 +6,9 @@ public class Display{
 
     static Scanner scan = new Scanner(System.in);
 
-    static VerificadorParenteses verificadorParenteses = new VerificadorParenteses();
-
     public static void main(String[] args) {
-        int[] range = new int[2];
+
         String entrada;
-        Boolean parenteses=false;
 
         Operacoes operacao = new Operacoes();
 
@@ -20,6 +17,7 @@ public class Display{
 
         //Verifica se o valor recebido foi usado vírgula ao invés de ponto e refaz.
         entrada = entrada.replaceAll(",", ".");
+
 
         //Converte a entrada para char.
         char[] valor = entrada.toCharArray();
