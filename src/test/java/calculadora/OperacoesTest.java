@@ -1,14 +1,14 @@
 package calculadora;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class OperacoesTest {
 
-    @Test
-    public void testTemOperacao(){
+    @Test //Testa se a função reconhece a operação de adição.
+    public void testTemOperacaoAdicao(){
 
-        char[] dados = new char[]{'1', '2', '-', '2', '4'};
+        char[] dados = new char[]{'1', '2', '+', '2', '4'};
 
         Operacoes operacao = new Operacoes();
 
