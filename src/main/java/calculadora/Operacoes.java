@@ -60,10 +60,6 @@ public class Operacoes {
 
 		 numero1 -> Variável onde eu salvo em STRING o primeiro número a ser operado.
 		 numero2 -> Variável onde eu salvo em STRING o segundo número a ser operado.
-		 respostaString -> Onde eu salvo o valor da resposta na forma de STRING.
-		 num1 -> Variável onde é salvo o primeiro número em forma de float.
-		 num2 -> Variável onde é salvo o segundo número em forma de float.
-		 valor -> Variável onde é salvo a resposta da operação dos dois valores.
 		 inicioRemocao -> Posição no vetor original onde começa o primeiro número.
 		 fimRemocao -> Posição no vetor original onde termina o segundo número.
 		 operacao -> Caractere da operação escolhida.
@@ -145,7 +141,7 @@ public class Operacoes {
 
                 i = inicio - 1;
 
-                //Caso ele não encontre as operações de adição e subtração ele printa mensagem dizendo que está sem operações para calcular.
+            //Caso ele não encontre as operações de adição e subtração ele printa mensagem dizendo que está sem operações para calcular.
             }else if(i == fim && operacao == '#' && nivel == 1) {
 
                 break;
