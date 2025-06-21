@@ -17,6 +17,7 @@ public class Operacoes {
             //Verifica sinal e outras incosistências para corrigir.
             dados = substituir(dados);
 
+            //Verifica se existe parênteses no vetor de dados.
             if(parenteses.existe(dados)){
                 range = parenteses.localiza(dados);
 
@@ -30,6 +31,7 @@ public class Operacoes {
                 range[1] = dados.length-1;
             }
 
+            //Verifica se existe parênteses no vetor de dados.
             dados = verificaOperacao(dados, range[0], range[1]);
 
             if(parenteses.existe(dados)){
