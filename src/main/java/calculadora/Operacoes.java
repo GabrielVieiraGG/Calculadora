@@ -10,7 +10,7 @@ public class Operacoes {
     int[] range = new int[2];
     int cont = 1;
 
-    public void valor(char[] dados) {
+    public char[] valor(char[] dados) {
 
         while(temOperacao(dados,0,0,false)) {
 
@@ -44,7 +44,9 @@ public class Operacoes {
 
             }
         }
+
         printDados(dados);
+        return dados;
     }
 
     public char[] verificaOperacao(char[] dados, int inicio, int fim) {
@@ -268,7 +270,7 @@ public class Operacoes {
         }
 
 
-        System.out.print("Resultado da operação " + cont + ": ");
+        /*System.out.print("Resultado da operação " + cont + ": ");
 
         cont = cont+1;
 
@@ -276,7 +278,7 @@ public class Operacoes {
             System.out.print(resposta[i] + " ");
         }
 
-        System.out.println("");
+        System.out.println("");*/
 
         return resposta;
 

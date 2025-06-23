@@ -237,4 +237,25 @@ public class OperacoesTest {
         assertArrayEquals(esperado, resultado);
     }
 
+    @Test
+    public void testValor(){
+
+        String[] entrada = new String[]{
+                "(2+4)", "2+-4", "2+0", "2-4", "2--4", "2-0", "2*4", "2*-4", "2*0", "4/2", "-4/-2", "4/0"
+        };
+
+        String[] esperado = new String[]{
+                "6", "-2", "2", "-2", "6", "2", "8", "-8", "0", "2", "-2", "Infinity"
+        };
+
+        for(int i=0; i<12;i++){
+
+            String resposta = new String(operacao.valor(entrada[i].toCharArray()));
+
+            assertEquals(esperado[i], resposta, "Posição do erro: " + i);
+        }
+
+    }
+
+
 }
